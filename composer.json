@@ -1,10 +1,15 @@
 {
-  "name": "roots/sage",
+  "name": "jlm2017/wp-theme",
   "type": "wordpress-theme",
-  "license": "MIT",
+  "license": "AGPL-3.0",
   "description": "The best WordPress starter theme with a modern front-end development workflow. Based on HTML5 Boilerplate, gulp, Bower, and Bootstrap.",
-  "homepage": "https://roots.io/sage/",
+  "homepage": "https://github.com/guilro/wp-theme/",
   "authors": [
+    {
+      "name": "Guillaume Royer",
+      "email": "perso@guilro.com",
+      "homepage": "https://github.com/guilro"
+    },
     {
       "name": "Ben Word",
       "email": "ben@benword.com",
