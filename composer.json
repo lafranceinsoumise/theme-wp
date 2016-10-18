@@ -1,9 +1,9 @@
 {
-  "name": "jlm2017/wp-theme",
+  "name": "jlm2017/theme-wp",
   "type": "wordpress-theme",
   "license": "AGPL-3.0",
   "description": "The best WordPress starter theme with a modern front-end development workflow. Based on HTML5 Boilerplate, gulp, Bower, and Bootstrap.",
-  "homepage": "https://github.com/guilro/wp-theme/",
+  "homepage": "https://github.com/guilro/theme-wp/",
   "authors": [
     {
       "name": "Guillaume Royer",
