@@ -1,0 +1,10 @@
+footer.content-info {
+  border-top: 40px solid $brand-secondary;
+  background-color: #f5f5f5;
+  margin-bottom: 0px;
+  font-family: $font-family-sans-serif;
+  padding: 20px 0px;
+  hr {
+    border-color: $gray-lighter;
+  }
+}

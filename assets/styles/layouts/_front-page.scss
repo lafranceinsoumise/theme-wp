@@ -1,0 +1,80 @@
+.home-header {
+  .background {
+    margin: auto;
+    padding-top: 20px;
+    background-color: $gray-lighter;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 40px solid $brand-secondary;
+
+    .container-menu {
+      height: 100%;
+      color: #fff;
+
+      .logo {
+        @include make-xs-column(6);
+        @include make-sm-column(8);
+        @include make-md-column(9);
+        img {
+          height:50px;
+          width:auto;
+        }
+      }
+
+      .login_button {
+        @include make-xs-column(6);
+        @include make-sm-column(4);
+        @include make-md-column(3);
+      }
+
+      .row-menu {
+        position: relative;
+      }
+
+      .menu {
+        @include make-xs-column(6);
+        @include make-sm-column(3);
+        .nav-stacked {
+          & > li {
+            a {
+              font-family: $font-family-sans-serif;
+              text-transform: lowercase;
+              font-weight: bolder;
+              width: auto;
+              margin: auto;
+              display: inline-block;
+              background: none;
+            }
+            & > a {
+              color: #fff;
+              &:hover {
+                background-color: rgba($gray-lighter, 0.3);
+              }
+            }
+          }
+        }
+      }
+
+      .subheadline {
+        @include make-xs-column(6);
+        @include make-sm-column(8);
+        @include make-sm-column-offset(1);
+        @include make-md-column(7);
+        @include make-md-column-offset(2);
+        @include make-lg-column(6);
+        @include make-lg-column-offset(3);
+        font-size: $font-size-h3;
+        color: inherit;
+        font-family: $font-family-serif;
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+        text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.6);
+        @media (min-width: $screen-sm-min) {
+          font-size: $font-size-h1;
+          bottom: 50px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.navbar-default {
+  font-family: $font-family-sans-serif;
+
+  .navbar-nav .navbar-img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+      img {
+        height: $navbar-height - (20px*2);
+        width: auto;
+      }
+  }
+
+  .navbar-brand, .custom-logo-link {
+    @extend .navbar-brand;
+    padding-left: 0px;
+    padding-right: 0px;
+    img {
+      margin-top: -10px;
+      margin-bottom: -10px;
+      height: $navbar-height - (29px*2) + (10px*2);
+      width: auto;
+    }
+  }
+}
+
+
+.navbar-secondary {
+  @extend .navbar-inverse;
+  border: 0px;
+  margin-top: -$navbar-margin-bottom;
+  min-height: 60px;
+  border-radius: 0px;
+  .navbar-nav > li > a {
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
+  box-shadow: 1px 4px 7px 2px rgba(0,0,0,0.3);
+}

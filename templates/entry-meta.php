@@ -1,2 +1,13 @@
+<span class="text-muted">
 <time class="updated" datetime="<?= get_post_time('c', true); ?>"><?= get_the_date(); ?></time>
-<p class="byline author vcard"><?= __('By', 'sage'); ?> <a href="<?= get_author_posts_url(get_the_author_meta('ID')); ?>" rel="author" class="fn"><?= get_the_author(); ?></a></p>
+dans
+<?php
+  $categories = get_the_category();
+
+  foreach ($categories as $key => $category) {
+?>
+<a href="<?= get_category_link($category->cat_ID) ?>">
+  <?= $category->name; ?>
+</a><?= $key < count($categories) - 1 ? ', ': '' ?>
+<?php } ?>
+</span>

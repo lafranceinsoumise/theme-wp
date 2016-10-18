@@ -1,0 +1,31 @@
+@mixin blue-card {
+  background-color: $brand-primary;
+  border-radius: $border-radius-base;
+  color: #fff;
+  -moz-box-shadow: 1px 4px 7px 2px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 1px 4px 7px 2px rgba(0,0,0,0.3);
+  -o-box-shadow: 1px 4px 7px 2px rgba(0,0,0,0.3);
+  box-shadow: 1px 4px 7px 2px rgba(0,0,0,0.3);
+
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: inherit;
+    a {
+      text-decoration: none;
+    }
+  }
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: darken(#fff, 15%);
+    }
+  }
+
+  .text-muted {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}

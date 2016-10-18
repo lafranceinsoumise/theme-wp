@@ -7,7 +7,10 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "3.3.6"
+    "bootstrap-sass": "3.3.6",
+    "font-awesome": "^4.6.0",
+    "masonry": "^4.1.0",
+    "imagesloaded": "^4.1.0"
   },
   "overrides": {
     "bootstrap-sass": {
@@ -30,6 +33,28 @@
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.ttf",
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff",
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "./scss/font-awesome.scss",
+        "./fonts/*"
+      ]
+    },
+    "imagesloaded": {
+      "main": [
+        "imagesloaded.js"
+      ]
+    },
+    "masonry": {
+      "main": [
+        "masonry.js"
+      ]
+    },
+    "outlayer": {
+      "main": [
+        "item.js",
+        "outlayer.js"
       ]
     }
   }
