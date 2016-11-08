@@ -17,13 +17,32 @@
       </div>
       <div class="collapse navbar-collapse" id="main-navbar-collapse">
         <?php
-        if (has_nav_menu('primary_navigation')) :
+        if (has_nav_menu('primary_navigation')) {
           wp_nav_menu([
             'theme_location' => 'primary_navigation',
             'walker' => new wp_bootstrap_navwalker(),
             'menu_class' => 'nav navbar-nav navbar-right'
           ]);
-        endif;
+        } else {
+        ?>
+          <div id="menu-export"></div>
+          <script>
+          (function() {
+              /** SETTINGS **/
+              var themeLocation = 'primary_navigation';
+              var addBootstrapCSS = true;
+
+              var r = new XMLHttpRequest();
+              r.open('GET', 'https://actus.jlm2017.fr/?menu_export=1&theme_location=primary_navigation&bootstrap=1');
+              r.onreadystatechange = function () {
+                if (r.readyState != 4 || r.status != 200) return;
+                document.getElementById('menu-export').innerHTML = r.responseText;
+              };
+              r.send();
+          })();
+          </script>
+        <?php
+        }
         ?>
       </div>
     </div>
