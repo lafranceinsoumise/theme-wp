@@ -28,17 +28,19 @@
           <div id="menu-export"></div>
           <script>
           (function() {
-              /** SETTINGS **/
-              var themeLocation = 'primary_navigation';
-              var addBootstrapCSS = true;
+            /** SETTINGS **/
+            var themeLocation = 'primary_navigation';
+            var addBootstrapCSS = true;
+            var menu_class = 'nav%20navbar-nav%20navbar-right';
+            var container = '';
 
-              var r = new XMLHttpRequest();
-              r.open('GET', 'https://actus.jlm2017.fr/?menu_export=1&theme_location=primary_navigation&bootstrap=1');
-              r.onreadystatechange = function () {
-                if (r.readyState != 4 || r.status != 200) return;
-                document.getElementById('menu-export').innerHTML = r.responseText;
-              };
-              r.send();
+            var r = new XMLHttpRequest();
+            r.open('GET', 'https://actus.jlm2017.fr/?menu_export=1&theme_location='+themeLocation+
+            '&menu_class='+menu_class+'&container='+container+
+            (addBootstrapCSS?'&bootstrap=1':''),true);
+            r.onreadystatechange=function(){if(r.readyState!=4||r.status!=200)return;
+            document.getElementById('menu-export').innerHTML = r.responseText;};
+            r.send();
           })();
           </script>
         <?php
