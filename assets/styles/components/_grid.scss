@@ -8,3 +8,15 @@
 .sidebar {
   @include make-sm-column($sidebar-sm-columns);
 }
+
+.page-template-template-no-sidebar .main {
+  @include make-sm-column(12);
+  @include make-md-column(10);
+  @include make-md-column-offset(1);
+  @include make-lg-column(8);
+  @include make-lg-column-offset(2);
+}
+
+.page-template-template-no-sidebar-full-window .container {
+  width: 100%;
+}
