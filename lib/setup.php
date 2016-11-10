@@ -101,7 +101,8 @@ function display_sidebar() {
     is_front_page(),
     is_category(),
     is_page_template('template-no-sidebar.php'),
-    is_page_template('template-no-sidebar-full-width.php'),
+    is_page_template('template-no-sidebar-full-container.php'),
+    is_page_template('template-no-sidebar-full-window.php'),
   ]);
 
   return apply_filters('sage/display_sidebar', $display);
