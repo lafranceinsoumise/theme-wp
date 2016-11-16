@@ -12,13 +12,16 @@
 
 (function($) {
   var initMasonry = function() {
-    var $grid = new Masonry('.page-content', {
+    var $grid = new Masonry('.page-content, .widget_siteorigin-panels-postloop', {
       itemSelector: 'article',
       percentPosition: true
     });
-    $('.page-content').imagesLoaded().progress(function() {
+    $('.page-content, .widget_siteorigin-panels-postloop').imagesLoaded().progress(function() {
+      console.log('lol');
       $grid.layout();
     });
+
+    console.log($('.widget_siteorigin-panels-postloop'));
   };
 
   // from https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
@@ -56,7 +59,7 @@
     // All pages
     'common': {
       init: function() {
-        // JavaScript to be fired on all pages
+        initMasonry();
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -80,7 +83,7 @@
     },
     'blog': {
       init: function() {
-        initMasonry();
+        // JavaScript to be fired on the about us page
       }
     }
   };
