@@ -12,12 +12,17 @@
 
 (function($) {
   var initMasonry = function() {
-    var $grid = new Masonry('.blog .page-content, .widget_siteorigin-panels-postloop', {
-      itemSelector: 'article',
-      percentPosition: true
-    });
-    $('.blog .page-content, .widget_siteorigin-panels-postloop').imagesLoaded().progress(function() {
-      $grid.layout();
+    $elem = $('.blog, .archive, .category, .search')
+      .find('.page-content')
+      .add('.widget_siteorigin-panels-postloop');
+    $elem.each(function(index, elem) {
+      var $grid = new Masonry(elem, {
+        itemSelector: 'article',
+        percentPosition: true
+      });
+      $elem.imagesLoaded().progress(function() {
+        $grid.layout();
+      });
     });
   };
 
