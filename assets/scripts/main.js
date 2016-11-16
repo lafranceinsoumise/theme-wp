@@ -12,16 +12,13 @@
 
 (function($) {
   var initMasonry = function() {
-    var $grid = new Masonry('.page-content, .widget_siteorigin-panels-postloop', {
+    var $grid = new Masonry('.blog .page-content, .widget_siteorigin-panels-postloop', {
       itemSelector: 'article',
       percentPosition: true
     });
-    $('.page-content, .widget_siteorigin-panels-postloop').imagesLoaded().progress(function() {
-      console.log('lol');
+    $('.blog .page-content, .widget_siteorigin-panels-postloop').imagesLoaded().progress(function() {
       $grid.layout();
     });
-
-    console.log($('.widget_siteorigin-panels-postloop'));
   };
 
   // from https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
