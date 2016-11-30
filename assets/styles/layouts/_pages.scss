@@ -1,0 +1,19 @@
+.page-template-template-no-sidebar .main {
+  @include make-sm-column(12);
+  @include make-md-column(10);
+  @include make-md-column-offset(1);
+  @include make-lg-column(8);
+  @include make-lg-column-offset(2);
+}
+
+.page-template-template-no-sidebar-full-window div.wrap.container {
+  width: 100%;
+}
+
+.page-template-template-no-sidebar,
+.page-template-template-no-sidebar-full-container,
+.page-template-template-no-sidebar-full-window {
+  .page-header {
+    text-align: center;
+  }
+}
