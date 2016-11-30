@@ -100,6 +100,8 @@ function display_sidebar() {
     is_404(),
     is_front_page(),
     is_category(),
+    is_archive(),
+    function_exists('is_product') && is_product(),
     is_page_template('template-no-sidebar.php'),
     is_page_template('template-no-sidebar-full-container.php'),
     is_page_template('template-no-sidebar-full-window.php'),
