@@ -72,4 +72,7 @@
       </div>
     </div>
   </nav>
+  <p>
+    salut les potos
+  </p>
 </header>

@@ -16,7 +16,12 @@ use Roots\Sage\Wrapper;
     <![endif]-->
     <?php
       do_action('get_header');
-      get_template_part('templates/header');
+      if (Setup\display_header_banner()) {
+          get_template_part('templates/header');
+      }
+      else {
+          get_template_part('templates/header-banner');
+      }
     ?>
     <div class="wrap container" role="document">
       <div class="content row">

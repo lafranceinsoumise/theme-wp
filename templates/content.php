@@ -25,4 +25,7 @@
       <?php the_excerpt(); ?>
     </div>
   </div>
+  <p>
+    bonne lecture?
+  </p>
 </article>

@@ -1,7 +1,8 @@
 .home-header {
   .background {
-    margin: auto;
+    margin: auto auto -150px;
     padding-top: 20px;
+    padding-bottom: 110px;
     background-color: $gray-lighter;
     background-size: cover;
     background-position: center;
@@ -74,6 +75,15 @@
           font-size: $font-size-h1;
           bottom: 50px;
         }
+      }
+    }
+  }
+  .container-signup-banner {
+    .card {
+      @include blue-card();
+      h3 {
+        font-family: Courgette,cursive;
+        font-size: 40px;
       }
     }
   }

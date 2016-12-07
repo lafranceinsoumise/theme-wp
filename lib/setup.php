@@ -103,10 +103,25 @@ function display_sidebar() {
     is_page_template('template-no-sidebar.php'),
     is_page_template('template-no-sidebar-full-container.php'),
     is_page_template('template-no-sidebar-full-window.php'),
+    is_page_template('template-page-banner.php')
   ]);
 
   return apply_filters('sage/display_sidebar', $display);
 }
+
+
+function display_header_banner() {
+  static $display_banner;
+
+  isset($display_banner) || $display_banner = !in_array(true, [
+    // The sidebar will NOT be displayed if ANY of the following return true.
+    // @link https://codex.wordpress.org/Conditional_Tags
+    is_page_template('template-page-banner.php')
+  ]);
+
+  return apply_filters('sage/display_header_banner', $display_banner);
+}
+
 
 /**
  * Theme assets
