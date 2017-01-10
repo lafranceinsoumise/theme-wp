@@ -18,8 +18,7 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       if (Setup\display_header_banner()) {
           get_template_part('templates/header');
-      }
-      else {
+      } else {
           get_template_part('templates/header-banner');
       }
     ?>

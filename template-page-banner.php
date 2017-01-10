@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Page with banner
+ * Template Name: Page with banner.
  */
 ?>
 

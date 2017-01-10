@@ -4,17 +4,18 @@
     if (get_post_type() === 'post' && get_post_format() === 'video') {
         $content = do_shortcode(apply_filters('the_content', get_the_content()));
         $embeds = get_media_embedded_in_content($content);
-        if(!empty($embeds)) {
-    ?>
+        if (!empty($embeds)) {
+            ?>
         <div class="entry-content-asset">
           <?php echo $embeds[0]; ?>
         </div>
     <?php
-        } else if (has_post_thumbnail()) {
+
+        } elseif (has_post_thumbnail()) {
             the_post_thumbnail('large');
         }
-    } else if (has_post_thumbnail()) {
-      the_post_thumbnail('large');
+    } elseif (has_post_thumbnail()) {
+        the_post_thumbnail('large');
     }
     ?>
     <header>
@@ -25,7 +26,4 @@
       <?php the_excerpt(); ?>
     </div>
   </div>
-  <p>
-    bonne lecture?
-  </p>
 </article>

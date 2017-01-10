@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: No Sidebar (Full container)
+ * Template Name: No Sidebar (Full container).
  */
 ?>
 

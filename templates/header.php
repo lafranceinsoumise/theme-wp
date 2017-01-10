@@ -7,24 +7,26 @@
         </button>
         <?php
           if (has_custom_logo()) {
-            the_custom_logo();
-          } else { ?>
+              the_custom_logo();
+          } else {
+              ?>
             <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">
               <?php bloginfo('name'); ?>
             </a> <?php
+
           }
         ?>
       </div>
       <div class="collapse navbar-collapse" id="main-navbar-collapse">
         <?php
         if (has_nav_menu('primary_navigation')) {
-          wp_nav_menu([
+            wp_nav_menu([
             'theme_location' => 'primary_navigation',
             'walker' => new wp_bootstrap_navwalker(),
-            'menu_class' => 'nav navbar-nav navbar-right'
+            'menu_class' => 'nav navbar-nav navbar-right',
           ]);
         } else {
-        ?>
+            ?>
           <div id="menu-export"></div>
           <script>
           (function() {
@@ -44,6 +46,7 @@
           })();
           </script>
         <?php
+
         }
         ?>
       </div>
@@ -65,14 +68,11 @@
           wp_nav_menu([
             'theme_location' => 'secondary_navigation',
             'walker' => new wp_bootstrap_navwalker(),
-            'menu_class' => 'nav navbar-nav'
+            'menu_class' => 'nav navbar-nav',
           ]);
         endif;
         ?>
       </div>
     </div>
   </nav>
-  <p>
-    salut les potos
-  </p>
 </header>

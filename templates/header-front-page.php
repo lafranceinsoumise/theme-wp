@@ -5,11 +5,13 @@
         <div class="logo">
           <?php
             if (has_custom_logo()) {
-              the_custom_logo();
-            } else { ?>
+                the_custom_logo();
+            } else {
+                ?>
               <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">
                 <?php bloginfo('name'); ?>
               </a> <?php
+
             }
           ?>
         </div>

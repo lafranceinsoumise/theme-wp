@@ -15,8 +15,8 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu
      * @see Walker::start_lvl()
      * @since 3.0.0
      *
-     * @param string $output Passed by reference. Used to append additional content.
-     * @param int    $depth  Depth of page. Used for padding.
+     * @param string $output Passed by reference. Used to append additional content
+     * @param int    $depth  Depth of page. Used for padding
      */
     public function start_lvl(&$output, $depth = 0, $args = array())
     {
@@ -28,10 +28,10 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu
      * @see Walker::start_el()
      * @since 3.0.0
      *
-     * @param string $output       Passed by reference. Used to append additional content.
-     * @param object $item         Menu item data object.
-     * @param int    $depth        Depth of menu item. Used for padding.
-     * @param int    $current_page Menu item ID.
+     * @param string $output       Passed by reference. Used to append additional content
+     * @param object $item         Menu item data object
+     * @param int    $depth        Depth of menu item. Used for padding
+     * @param int    $current_page Menu item ID
      * @param object $args
      */
     public function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0)
@@ -78,9 +78,9 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu
             $output .= $indent.'<li'.$id.$value.$class_names.'>';
 
             $atts = array();
-            $atts['title'] = !empty($item->title)    ? $item->title    : '';
-            $atts['target'] = !empty($item->target)    ? $item->target    : '';
-            $atts['rel'] = !empty($item->xfn)        ? $item->xfn    : '';
+            $atts['title'] = !empty($item->title) ? $item->title : '';
+            $atts['target'] = !empty($item->target) ? $item->target : '';
+            $atts['rel'] = !empty($item->xfn) ? $item->xfn : '';
 
             // If item has_children add atts to a.
             if ($args->has_children && $depth === 0) {
@@ -138,11 +138,11 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu
      * @since 2.5.0
      *
      * @param object $element           Data object
-     * @param array  $children_elements List of elements to continue traversing.
-     * @param int    $max_depth         Max depth to traverse.
-     * @param int    $depth             Depth of current element.
+     * @param array  $children_elements List of elements to continue traversing
+     * @param int    $max_depth         Max depth to traverse
+     * @param int    $depth             Depth of current element
      * @param array  $args
-     * @param string $output            Passed by reference. Used to append additional content.
+     * @param string $output            Passed by reference. Used to append additional content
      */
     public function display_element($element, &$children_elements, $max_depth, $depth, $args, &$output)
     {
@@ -168,7 +168,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu
      * menu manager the function with display nothing to a non-logged in user,
      * and will add a link to the WordPress menu manager if logged in as an admin.
      *
-     * @param array $args passed from the wp_nav_menu function.
+     * @param array $args passed from the wp_nav_menu function
      */
     public static function fallback($args)
     {
