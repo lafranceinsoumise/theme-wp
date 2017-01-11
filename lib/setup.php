@@ -116,7 +116,7 @@ function display_header_banner() {
   static $display_banner;
 
   isset($display_banner) || $display_banner = in_array(true, [
-    is_page_template('template-banner.php'),
+    is_page_template('template-page-banner.php')
   ]);
 
   return apply_filters('sage/display_header_banner', $display_banner);
