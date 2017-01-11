@@ -6,30 +6,13 @@
     global $jlm2017_form_user_zipcode;
   ?>
 
-<<<<<<< 6e04b3f55dd6aed500b9570905220341cdffe34b
   <div class="banner-header hidden-print">
-=======
-  <div class="home-header hidden-print">
->>>>>>> modify the template for the WP plugin
     <div class="background" style="background-image: url('<?php echo get_header_image(); ?>'); width: 100%;">
       <div class="container container-menu">
         <div class="row">
           <div class="logo">
-<<<<<<< 6e04b3f55dd6aed500b9570905220341cdffe34b
             <?php the_custom_logo(); ?>
           </div>
-=======
-            <!-- <img alt="logo orange bleu" src="<?php echo the_custom_logo(); ?>"> -->
-            <?php the_custom_logo(); ?>
-          </div>
-          <!-- <div class="login_button">
-            {% if request.logged_in? %}
-            <a href="{{ request.current_signup.logout_url }}" class="btn btn-default btn-block">Se déconnecter</a>
-            {% else %}
-            <a href="/login" class="btn btn-default btn-block">Se connecter</a>
-            {% endif %}
-          </div> -->
->>>>>>> modify the template for the WP plugin
         </div>
         <div class="row row-menu">
           <div class="menu" id="menu-export"></div>
