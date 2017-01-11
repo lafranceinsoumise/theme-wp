@@ -51,3 +51,16 @@
        url('../fonts/roboto-slab-v6-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/roboto-slab-v6-latin-700.svg#RobotoSlab') format('svg'); /* Legacy iOS */
 }
+/* courgette-regular - latin */
+@font-face {
+  font-family: 'Courgette';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/courgette-v4-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Courgette Regular'), local('Courgette-Regular'),
+       url('../fonts/courgette-v4-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/courgette-v4-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/courgette-v4-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/courgette-v4-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/courgette-v4-latin-regular.svg#Courgette') format('svg'); /* Legacy iOS */
+}

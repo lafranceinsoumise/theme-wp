@@ -106,9 +106,20 @@ function display_sidebar() {
     is_page_template('template-no-sidebar.php'),
     is_page_template('template-no-sidebar-full-container.php'),
     is_page_template('template-no-sidebar-full-window.php'),
+    is_page_template('template-banner.php'),
   ]);
 
   return apply_filters('sage/display_sidebar', $display);
+}
+
+function display_header_banner() {
+  static $display_banner;
+
+  isset($display_banner) || $display_banner = in_array(true, [
+    is_page_template('template-banner.php'),
+  ]);
+
+  return apply_filters('sage/display_header_banner', $display_banner);
 }
 
 /**
