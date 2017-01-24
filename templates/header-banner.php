@@ -46,7 +46,7 @@
             <h3 class="text-center">J'appuie la candidature<br>de Jean-Luc Mélenchon</h3>
             <form id="carte_page_new_signup_form" method="POST" action="">
               <?php echo (strpos($jlm2017_form_errors, 'redirect') !== false) ?
-                '<p class="text-center">Oups, une erreure est survenue, veuillez réessayer, merci</p>' : ''
+                '<p>Oups, une erreure est survenue, veuillez réessayer&nbsp;!</p>' : ''
               ?>
               <div class="form-group">
                 <input type="hidden" name="action" value="jlm2017_registration_form_valid">
@@ -70,16 +70,6 @@
                   <button type="submit" class="btn btn-block btn-lg btn-primary">J'appuie</button>
                 </div>
               </div>
-              <script>
-                jQuery(function($) {
-                  $('#signup_email').on('input', function (){
-                    $('#signup_email').css("background-color", "white");
-                  });
-                  $('#signup_address_zip').on('input', function (){
-                    $('#signup_address_zip').css("background-color", "white");
-                  });
-                });
-              </script>
               <div class="col-xs-12 text-center">
                 <p>Je recevrai des informations sur la campagne de Jean-Luc Mélenchon</p>
               </div>
