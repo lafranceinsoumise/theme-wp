@@ -84,9 +84,9 @@
                 <p>Je recevrai des informations sur la campagne de Jean-Luc Mélenchon</p>
               </div>
               <div class="col-xs-12 text-center">
-                <small>Nous sommes: <?php $options = get_option('jlm2017_registration_settings'); echo $options['jlm2017_registration_people_count']?></small>
+                <small>Nous sommes: <?php  echo get_transient( 'people_count_jlm2017')?></small>
                 <br />
-                <small>Dernière mise à jour: <?php $options = get_option('jlm2017_registration_settings'); echo date('d/m/Y à H:i', $options['jlm2017_registration_saved_date'])?></small>
+                <small>Dernière mise à jour: <?php echo date('d/m/Y à H:i', get_transient( 'save_date_jlm2017'))?></small>
               </div>
             </form>
           </div>
