@@ -69,6 +69,11 @@
                 <div class="col-xs-12 text-center">
                   <p>Je recevrai des informations sur la campagne de Jean-Luc Mélenchon</p>
                 </div>
+                <div class="col-xs-12 text-center">
+                  <small>Nous sommes <?=JLM2017_Plugin::get_people_count()?></small>
+                  <br />
+                  <small>Dernière mise à jour à <?=date('d/m/Y à H:i', JLM2017_Plugin::get_saved_date())?></small>
+                </div>
               </form>
             </div>
           </div>
