@@ -11,7 +11,7 @@
           <h3 class="text-center">J'appuie la candidature<br>de Jean-Luc Mélenchon</h3>
           <form id="carte_page_new_signup_form" method="POST" action="">
             <?php echo (strpos($jlm2017_form_errors, 'redirect') !== false) ?
-              '<p>Oups, une erreure est survenue, veuillez réessayer&nbsp;!</p>' : ''
+              '<p>Oups, une erreure est survenue, veuillez réessayer plus tard&nbsp;!</p>' : ''
             ?>
             <div class="form-group">
               <input type="hidden" name="action" value="jlm2017_registration_form_valid">
