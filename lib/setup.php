@@ -29,7 +29,8 @@ function setup() {
   register_nav_menus([
     'primary_navigation' => __('Primary Navigation', 'sage'),
     'secondary_navigation' => __('Secondary Navigation', 'sage'),
-    'tertiary_navigation' => __('Tertiary Navigation', 'sage')
+    'home_page_left_navigation' => __('Home Page Left Navigation', 'sage'),
+    'home_page_right_navigation' => __('Home Page Right Navigation', 'sage')
   ]);
 
   // Enable post thumbnails

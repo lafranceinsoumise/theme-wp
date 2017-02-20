@@ -17,9 +17,9 @@
         <div class="row row-menu container-signup-banner">
           <div class="menu" id="menu-export">
             <?php
-              if (has_nav_menu('primary_navigation')) {
+              if (has_nav_menu('home_page_left_navigation')) {
                 wp_nav_menu( array(
-                  'theme_location' => 'primary_navigation',
+                  'theme_location' => 'home_page_left_navigation',
                   'walker' => new wp_bootstrap_navwalker(),
                   'menu_class' => 'nav nav-pills nav-stacked text-center'
                 ));
@@ -28,9 +28,9 @@
           </div>
           <div class="menu col-sm-push-6" id="menu-export2">
             <?php
-              if (has_nav_menu('tertiary_navigation')) {
+              if (has_nav_menu('home_page_right_navigation')) {
                 wp_nav_menu( array(
-                  'theme_location' => 'tertiary_navigation',
+                  'theme_location' => 'home_page_right_navigation',
                   'walker' => new wp_bootstrap_navwalker(),
                   'menu_class' => 'nav nav-pills nav-stacked text-center'
                 ));
