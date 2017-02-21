@@ -4,5 +4,4 @@
  */
 ?>
 
-
-<?php get_template_part('templates/content-banner', 'page'); ?>
+<?php get_template_part('templates/content', 'banner'); ?>

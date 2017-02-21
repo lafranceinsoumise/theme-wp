@@ -35,7 +35,7 @@ use Roots\Sage\Wrapper;
     <?php
       do_action('get_footer');
       if (is_page_template('template-banner.php')) {
-          get_template_part('templates/footer-home');
+          get_template_part('templates/footer-banner');
       }
       else {
           get_template_part('templates/footer');
