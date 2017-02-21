@@ -15,11 +15,8 @@ use Roots\Sage\Wrapper;
       </div>
     <![endif]-->
     <?php
-      do_action('get_header');
-      if (Setup\display_header_banner()) {
-          get_template_part('templates/header-banner');
-      }
-      else {
+      if (!is_page_template('template-banner.php')) {
+          do_action('get_header');
           get_template_part('templates/header');
       }
     ?>
@@ -37,7 +34,7 @@ use Roots\Sage\Wrapper;
     </div><!-- /.wrap -->
     <?php
       do_action('get_footer');
-      if (Setup\display_header_banner()) {
+      if (is_page_template('template-banner.php')) {
           get_template_part('templates/footer-home');
       }
       else {

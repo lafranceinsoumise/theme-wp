@@ -1,4 +1,4 @@
-<header class="banner">
+<div class="row">
 
   <?php
     global $jlm2017_form_errors;
@@ -76,4 +76,4 @@
       </div>
     </div>
   </div>
-</header>
+</div>
