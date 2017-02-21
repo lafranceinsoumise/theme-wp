@@ -78,6 +78,13 @@
       }
     }
   }
+@media (min-width: $screen-sm-min) {
+  .container-signup-banner {
+    display: flex;  /* make the row a flex container */
+    align-items: center; /* vertically center each flex item in the container */
+  }
+}
+
   .container-signup-banner {
     margin-top: 50px;
     .card {
