@@ -17,7 +17,7 @@
         @include make-sm-column(8);
         @include make-md-column(9);
         img {
-          height:50px;
+          height:100px;
           width:auto;
         }
       }
@@ -79,6 +79,7 @@
     }
   }
   .container-signup-banner {
+    margin-top: 50px;
     .card {
       @include blue-card();
       h3 {

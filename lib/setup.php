@@ -28,7 +28,9 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/register_nav_menus
   register_nav_menus([
     'primary_navigation' => __('Primary Navigation', 'sage'),
-    'secondary_navigation' => __('Secondary Navigation', 'sage')
+    'secondary_navigation' => __('Secondary Navigation', 'sage'),
+    'home_page_left_navigation' => __('Home Page Left Navigation', 'sage'),
+    'home_page_right_navigation' => __('Home Page Right Navigation', 'sage')
   ]);
 
   // Enable post thumbnails
@@ -110,16 +112,6 @@ function display_sidebar() {
   ]);
 
   return apply_filters('sage/display_sidebar', $display);
-}
-
-function display_header_banner() {
-  static $display_banner;
-
-  isset($display_banner) || $display_banner = in_array(true, [
-    is_page_template('template-banner.php'),
-  ]);
-
-  return apply_filters('sage/display_header_banner', $display_banner);
 }
 
 /**
