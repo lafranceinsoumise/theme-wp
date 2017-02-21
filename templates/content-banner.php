@@ -15,7 +15,7 @@
           </div>
         </div>
         <div class="row row-menu container-signup-banner">
-          <div class="menu" style="font-size: x-large" id="menu-export ">
+          <div class="menu">
             <?php
               if (has_nav_menu('home_page_left_navigation')) {
                 wp_nav_menu( array(
@@ -26,7 +26,7 @@
               }
             ?>
           </div>
-          <div class="menu col-sm-push-6" style="font-size: x-large" id="menu-export2">
+          <div class="menu col-sm-push-6">
             <?php
               if (has_nav_menu('home_page_right_navigation')) {
                 wp_nav_menu( array(
