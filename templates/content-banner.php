@@ -7,7 +7,7 @@
   ?>
 
   <div class="banner-header hidden-print">
-    <div class="background" style="background-image: url('<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url() : get_header_image(); ?>'); width: 100%; height: 100vh;">
+    <div class="background" style="background-image: url('<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url() : get_header_image(); ?>');">
       <div class="container container-menu">
         <div class="row">
           <div class="logo col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-4">
@@ -38,8 +38,8 @@
             ?>
           </div>
           <div class="col-sm-6 col-xs-12 col-sm-pull-3 card">
+            <h3 class="text-center">J'appuie la candidature<br>de Jean-Luc Mélenchon</h3>
             <div class="row">
-              <h3 class="text-center">J'appuie la candidature<br>de Jean-Luc Mélenchon</h3>
               <form id="carte_page_new_signup_form" method="POST" action="">
                 <?php echo (strpos($jlm2017_form_errors, 'redirect') !== false) ?
                   '<p>Oups, une erreure est survenue, veuillez réessayer plus tard&nbsp;!</p>' : ''
@@ -66,16 +66,23 @@
                     <button type="submit" class="btn btn-block btn-lg btn-primary">J'appuie</button>
                   </div>
                 </div>
-                <div class="col-xs-12 text-center">
+                <div class="col-xs-12">
                   <p>Je recevrai des informations sur la campagne de Jean-Luc Mélenchon</p>
-                </div>
-                <div class="col-xs-12 text-center">
-                  <small>Nous sommes <?=JLM2017_Plugin::get_people_count()?></small>
-                  <br />
-                  <small>Dernière mise à jour à <?=date('d/m/Y à H:i', JLM2017_Plugin::get_saved_date())?></small>
+                  <p class="text-right">
+                    <small>Si vous habitez à l'étranger, <a href="http://www.jlm2017.fr/inscription">cliquez ici</a>.</small>
+                  </p>
                 </div>
               </form>
             </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-responsive">
+            <p class="text-center">
+              <span class="lead">Nous sommes <?=JLM2017_Plugin::get_people_count()?>.</span>
+              <br />
+              <small>Dernière mise à jour à <?=date('d/m/Y à H:i', JLM2017_Plugin::get_saved_date())?>.</small>
+            </p>
           </div>
         </div>
       </div>

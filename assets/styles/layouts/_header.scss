@@ -1,15 +1,15 @@
 .banner-header {
   .background {
+    min-height: 100vh;
     margin: auto auto -150px;
     padding-top: 20px;
-    padding-bottom: 110px;
     background-color: $gray-lighter;
     background-size: cover;
     background-position: center;
     border-bottom: 40px solid $brand-secondary;
 
     .container-menu {
-      height: 100%;
+      min-height: 100%;
       color: #fff;
 
       .logo {
@@ -30,6 +30,7 @@
 
       .row-menu {
         position: relative;
+        margin-bottom: 50px;
       }
 
       .menu {
