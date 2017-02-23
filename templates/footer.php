@@ -35,7 +35,7 @@
                 <button type="submit" class="btn btn-block btn-lg btn-primary">J'appuie</button>
               </div>
             </div>
-            <div class="col-xs-12">
+            <div class="col-xs-12 text-center">
               <p>Je recevrai des informations sur la campagne de Jean-Luc Mélenchon</p>
             </div>
           </form>
