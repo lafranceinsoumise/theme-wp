@@ -1,8 +1,8 @@
 <footer class="content-info">
   <?php
     global $jlm2017_form_signup_errors;
-    global $jlm2017_form_user_email;
-    global $jlm2017_form_user_zipcode;
+    global $jlm2017_form_signup_email;
+    global $jlm2017_form_signup_zipcode;
   ?>
   <div class="container container-signup-footer hidden-print">
     <div class="row">
@@ -17,7 +17,7 @@
               <input type="hidden" name="action" value="jlm2017_signup_form">
             </div>
             <div class="col-sm-12 form-group <?= isset($jlm2017_form_signup_errors['email']) ? 'has-error has-feedback' : ''; ?>">
-              <input required class="form-control input-lg" id="signup_email" name="jlm2017_form_signup_email" value="<?= $jlm2017_form_user_email ?>" placeholder="Adresse email" type="email" />
+              <input required class="form-control input-lg" id="signup_email" name="jlm2017_form_signup_email" value="<?= $jlm2017_form_signup_email ?>" placeholder="Adresse email" type="email" />
               <?php if (isset($jlm2017_form_signup_errors['email'])) { ?>
                 <i class="fa fa-exclamation-triangle" aria-hidden="true" style="float: right; margin-top: -33px; margin-right: 10px; color: red;"></i>
                 <span class="help-block"><?= $jlm2017_form_signup_errors['email'] ?></span>
@@ -25,7 +25,7 @@
             </div>
             <div class="form-group">
               <div class="col-sm-6 form-group <?= isset($jlm2017_form_signup_errors['zipcode']) ? 'has-error has-feedback' : ''; ?>">
-                <input required class="form-control input-lg" id="signup_address_zip" name="jlm2017_form_signup_zipcode"  value="<?= $jlm2017_form_user_zipcode ?>" placeholder="Code Postal" type="text" />
+                <input required class="form-control input-lg" id="signup_address_zip" name="jlm2017_form_signup_zipcode"  value="<?= $jlm2017_form_signup_zipcode ?>" placeholder="Code Postal" type="text" />
                 <?php if (isset($jlm2017_form_signup_errors['zipcode'])) { ?>
                   <i class="fa fa-exclamation-triangle" aria-hidden="true" style="float: right; margin-top: -33px; margin-right: 10px; color: red;"></i>
                   <span class="help-block"><?= $jlm2017_form_signup_errors['zipcode'] ?></span>
