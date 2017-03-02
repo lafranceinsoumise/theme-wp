@@ -1,9 +1,9 @@
 <div class="row">
 
   <?php
-    global $jlm2017_form_errors;
-    global $jlm2017_form_user_email;
-    global $jlm2017_form_user_zipcode;
+    global $jlm2017_form_signup_errors;
+    global $jlm2017_form_signup_email;
+    global $jlm2017_form_signup_zipcode;
   ?>
 
   <div class="banner-header hidden-print">
@@ -40,27 +40,27 @@
           <div class="col-sm-6 col-xs-12 col-sm-pull-3 card">
             <h3 class="text-center">J'appuie la candidature<br>de Jean-Luc Mélenchon</h3>
             <div class="row">
-              <form id="carte_page_new_signup_form" method="POST" action="">
-                <?php echo (strpos($jlm2017_form_errors, 'redirect') !== false) ?
-                  '<p>Oups, une erreure est survenue, veuillez réessayer plus tard&nbsp;!</p>' : ''
-                ?>
+              <form method="POST" action="">
+                 <?php if (isset($jlm2017_form_signup_errors['form'])) {
+                  echo '<p>'.$jlm2017_form_signup_errors['form'].'</p>';
+                 } ?>
                 <div class="form-group">
-                  <input type="hidden" name="action" value="jlm2017_registration_form_valid">
+                  <input type="hidden" name="action" value="jlm2017_signup_form">
                 </div>
-                <div class="col-sm-12 form-group <?= (strpos($jlm2017_form_errors, 'email') !== false) ? 'has-error has-feedback' : ''; ?>">
-                <input required="" class="form-control input-lg" id="signup_email" name="signup_email" <?= ($jlm2017_form_errors !== '') ?   'value="'.$jlm2017_form_user_email.'"' : 'placeholder="Adresse email"' ?> type="email" />
-                  <?php echo (strpos($jlm2017_form_errors, 'email') !== false) ?
-                  '<i class="fa fa-exclamation-triangle" aria-hidden="true" style="float: right; margin-top: -33px; margin-right: 10px;   color: red;"></i>
-                    <span class="help-block">Adresse email déjà existante dans la base de donnée.</span>' : ''
-                  ?>
+                <div class="col-sm-12 form-group <?= isset($jlm2017_form_signup_errors['email']) ? 'has-error has-feedback' : ''; ?>">
+                  <input required class="form-control input-lg" id="signup_email" name="jlm2017_form_signup_email" value="<?= $jlm2017_form_signup_email ?>" placeholder="Adresse email" type="email" />
+                  <?php if (isset($jlm2017_form_signup_errors['email'])) { ?>
+                    <i class="fa fa-exclamation-triangle" aria-hidden="true" style="float: right; margin-top: -33px; margin-right: 10px; color: red;"></i>
+                    <span class="help-block"><?= $jlm2017_form_signup_errors['email'] ?></span>
+                  <?php } ?>
                 </div>
                 <div class="form-group">
-                  <div class="col-sm-6 form-group <?= (strpos($jlm2017_form_errors, 'zipcode') !== false) ? 'has-error has-feedback' : ''; ?>">
-                  <input required="" class="form-control input-lg" id="signup_address_zip" name="signup_zipcode" <?= ($jlm2017_form_errors   !== '') ? 'value="'.$jlm2017_form_user_zipcode.'"' : 'placeholder="Code Postal"'  ?> type="text" />
-                    <?= (strpos($jlm2017_form_errors, 'zipcode') !== false) ?
-                    '<i class="fa fa-exclamation-triangle" aria-hidden="true" style="float: right; margin-top: -33px; margin-right: 10px;   color: red;"></i>
-                      <span class="help-block">Code postal incorrect.</span>' : ''
-                    ?>
+                  <div class="col-sm-6 form-group <?= isset($jlm2017_form_signup_errors['zipcode']) ? 'has-error has-feedback' : ''; ?>">
+                    <input required class="form-control input-lg" id="signup_address_zip" name="jlm2017_form_signup_zipcode"  value="<?= $jlm2017_form_signup_zipcode ?>" placeholder="Code Postal" type="text" />
+                    <?php if (isset($jlm2017_form_signup_errors['zipcode'])) { ?>
+                      <i class="fa fa-exclamation-triangle" aria-hidden="true" style="float: right; margin-top: -33px; margin-right: 10px; color: red;"></i>
+                      <span class="help-block"><?= $jlm2017_form_signup_errors['zipcode'] ?></span>
+                    <?php } ?>
                   </div>
                   <div class="col-sm-6">
                     <button type="submit" class="btn btn-block btn-lg btn-primary">J'appuie</button>
