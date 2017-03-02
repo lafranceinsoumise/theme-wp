@@ -83,6 +83,7 @@
               <br />
               <small>Dernière mise à jour à <?=date('d/m/Y à H:i', JLM2017_Plugin::get_saved_date())?>.</small>
             </p>
+            <?php the_content(); ?>
           </div>
         </div>
       </div>
