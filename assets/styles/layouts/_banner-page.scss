@@ -13,11 +13,12 @@
       color: #fff;
 
       .logo {
-        @include make-xs-column(12);
-        @include make-sm-column(8);
-        @include make-sm-column-offset(2);
-        @include make-md-column(6);
-        @include make-md-column-offset(3);
+        @include make-xs-column(8);
+        @include make-xs-column-offset(2);
+        @include make-sm-column(6);
+        @include make-sm-column-offset(3);
+        @include make-md-column(4);
+        @include make-md-column-offset(4);
         img {
           width:100%;
           height:auto;
