@@ -1,4 +1,4 @@
-.banner-header {
+.page-template-template-banner {
   .background {
     min-height: 100vh;
     margin: auto auto -150px;
@@ -13,12 +13,14 @@
       color: #fff;
 
       .logo {
-        @include make-xs-column(6);
+        @include make-xs-column(12);
         @include make-sm-column(8);
-        @include make-md-column(9);
+        @include make-sm-column-offset(2);
+        @include make-md-column(6);
+        @include make-md-column-offset(3);
         img {
-          height:100px;
-          width:auto;
+          width:100%;
+          height:auto;
         }
       }
 
@@ -31,33 +33,34 @@
       .row-menu {
         position: relative;
         margin-bottom: 50px;
-      }
 
-      .menu {
-        @include make-xs-column(6);
-        @include make-sm-column(3);
-        .nav-stacked {
-          & > li {
-            a {
-              font-size: x-large;
-              font-family: $font-family-sans-serif;
-              text-transform: lowercase;
-              font-weight: bolder;
-              width: auto;
-              margin: auto;
-              display: inline-block;
-              background: none;
-            }
-            & > a {
-              color: #fff;
-              &:hover {
-                background-color: rgba($gray-lighter, 0.3);
+        .menu-right {
+          @include make-sm-column-push(6);
+        }
+        .menu {
+          @include make-xs-column(6);
+          @include make-sm-column(3);
+          .nav-stacked {
+            li {
+              a {
+                font-size: x-large;
+                font-family: $font-family-sans-serif;
+                text-transform: lowercase;
+                font-weight: bolder;
+                width: auto;
+                margin: auto;
+                display: inline-block;
+                background: none;
+                color: #fff;
+                &:hover {
+                  background-color: rgba($gray-lighter, 0.3);
+                }
               }
             }
           }
         }
-      }
 
+      }
       .subheadline {
         @include make-xs-column(6);
         @include make-sm-column(8);

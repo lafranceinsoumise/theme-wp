@@ -6,11 +6,11 @@
     global $jlm2017_form_signup_zipcode;
   ?>
 
-  <div class="banner-header hidden-print">
+  <div class="hidden-print">
     <div class="background" style="background-image: url('<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url() : get_header_image(); ?>');">
       <div class="container container-menu">
         <div class="row">
-          <div class="logo col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-4">
+          <div class="logo">
             <?php the_custom_logo(); ?>
           </div>
         </div>
@@ -26,7 +26,7 @@
               }
             ?>
           </div>
-          <div class="menu col-sm-push-6">
+          <div class="menu menu-right">
             <?php
               if (has_nav_menu('home_page_right_navigation')) {
                 wp_nav_menu( array(
@@ -37,7 +37,7 @@
               }
             ?>
           </div>
-          <div class="col-sm-6 col-xs-12 col-sm-pull-3 card">
+          <div class="col-xs-12 col-sm-6 col-sm-pull-3 card">
             <h3 class="text-center">J'appuie la candidature<br>de Jean-Luc Mélenchon</h3>
             <div class="row">
               <form method="POST" action="">
