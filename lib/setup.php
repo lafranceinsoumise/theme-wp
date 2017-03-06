@@ -102,6 +102,7 @@ function display_sidebar() {
     // @link https://codex.wordpress.org/Conditional_Tags
     is_404(),
     is_front_page(),
+    is_home(),
     is_category(),
     is_archive(),
     function_exists('is_product') && is_product(),
