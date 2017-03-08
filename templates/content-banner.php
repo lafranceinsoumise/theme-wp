@@ -37,7 +37,7 @@
               }
             ?>
           </div>
-          <div class="col-xs-12 col-sm-6 col-sm-pull-3 card">
+          <div class="col-xs-12 col-md-6 col-md-pull-3 card">
             <h3 class="text-center">J'appuie la candidature<br>de Jean-Luc Mélenchon</h3>
             <div class="row">
               <form method="POST" action="">

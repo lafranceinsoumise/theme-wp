@@ -25,22 +25,16 @@
         }
       }
 
-      .login_button {
-        @include make-xs-column(6);
-        @include make-sm-column(4);
-        @include make-md-column(3);
-      }
-
       .row-menu {
-        position: relative;
         margin-bottom: 50px;
 
         .menu-right {
-          @include make-sm-column-push(6);
+          @include make-md-column-push(6);
         }
         .menu {
-          @include make-xs-column(6);
-          @include make-sm-column(3);
+          @include make-xs-column(12);
+          @include make-sm-column(6);
+          @include make-md-column(3);
           .nav-stacked {
             li {
               a {
@@ -84,7 +78,7 @@
       }
     }
   }
-@media (min-width: $screen-sm-min) {
+@media (min-width: $screen-md-min) {
   .container-signup-banner {
     display: flex;  /* make the row a flex container */
     align-items: center; /* vertically center each flex item in the container */
