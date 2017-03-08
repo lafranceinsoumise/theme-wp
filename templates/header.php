@@ -35,7 +35,7 @@
             var container = '';
 
             var r = new XMLHttpRequest();
-            r.open('GET', 'https://actus.jlm2017.fr/?menu_export=1&theme_location='+themeLocation+
+            r.open('GET', 'https://jlm2017.fr/?menu_export=1&theme_location='+themeLocation+
             '&menu_class='+menu_class+'&container='+container+
             (addBootstrapCSS?'&bootstrap=1':''),true);
             r.onreadystatechange=function(){if(r.readyState!=4||r.status!=200)return;
