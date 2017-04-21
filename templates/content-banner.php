@@ -76,6 +76,16 @@
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col-responsive">
+            <p class="text-center">
+              <span class="lead">Nous sommes <?=JLM2017_Plugin::get_people_count()?>.</span>
+              <br />
+              <small>Dernière mise à jour le <?= date_i18n('d/m/Y à H:i', JLM2017_Plugin::get_saved_date()) ?>.</small>
+            </p>
+            <?php the_content(); ?>
+          </div>
+        </div>
       </div>
     </div>
   </div>
