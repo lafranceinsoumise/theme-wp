@@ -38,7 +38,7 @@
             ?>
           </div>
           <div class="col-xs-12 col-md-6 col-md-pull-3 card">
-            <h3 class="text-center">J'appuie la candidature<br>de Jean-Luc Mélenchon</h3>
+            <h3 class="text-center">Je rejoins la France Insoumise</h3>
             <div class="row">
               <form method="POST" action="">
                  <?php if (isset($jlm2017_form_signup_errors['form'])) {
@@ -67,7 +67,7 @@
                   </div>
                 </div>
                 <div class="col-xs-12">
-                  <p>Je recevrai des informations sur la campagne de Jean-Luc Mélenchon</p>
+                  <p>Je recevrai des informations de la France Insoumise</p>
                   <p class="text-right">
                     <small>Si vous habitez à l'étranger, <a href="http://www.jlm2017.fr/inscription">cliquez ici</a>.</small>
                   </p>
