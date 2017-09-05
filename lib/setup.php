@@ -105,6 +105,7 @@ function display_sidebar() {
     is_home(),
     is_category(),
     is_archive(),
+    is_search(),
     function_exists('is_product') && is_product(),
     is_page_template('template-no-sidebar.php'),
     is_page_template('template-no-sidebar-full-container.php'),
