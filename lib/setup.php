@@ -111,9 +111,21 @@ function display_sidebar() {
     is_page_template('template-no-sidebar-full-container.php'),
     is_page_template('template-no-sidebar-full-window.php'),
     is_page_template('template-banner.php'),
+    is_page_template('template-naked.php'),
   ]);
 
   return apply_filters('sage/display_sidebar', $display);
+}
+
+/**
+ * Determine if secondary navbar should be displayed
+ */
+function display_secondary_navbar() {
+    isset($display) || $display = !in_array(true, [
+        is_page_template('template-naked.php')
+    ]);
+
+    return apply_filters('sage/display_secondary_navbar', $display);
 }
 
 /**

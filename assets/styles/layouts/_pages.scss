@@ -18,8 +18,13 @@
 }
 
 .page-template-template-banner div.wrap.container,
-.page-template-template-no-sidebar-full-window div.wrap.container {
+.page-template-template-no-sidebar-full-window div.wrap.container,
+.page-template-template-naked div.wrap.container {
   width: 100%;
+}
+
+.page-template-template-naked.elementor-page nav.nav-primary {
+  margin-bottom: 0;
 }
 
 .elementor-page .main {

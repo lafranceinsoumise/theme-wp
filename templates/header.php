@@ -1,3 +1,10 @@
+<?php
+
+use Roots\Sage\Setup;
+use Roots\Sage\Wrapper;
+
+?>
+
 <header class="banner">
   <nav class="nav-primary navbar navbar-default navbar-static-top">
     <div class="container">
@@ -49,6 +56,7 @@
       </div>
     </div>
   </nav>
+  <?php if (Setup\display_secondary_navbar()) : ?>
   <nav class="navbar navbar-secondary">
     <div class="container">
       <div class="navbar-header">
@@ -73,4 +81,5 @@
       </div>
     </div>
   </nav>
+<? endif; ?>
 </header>
