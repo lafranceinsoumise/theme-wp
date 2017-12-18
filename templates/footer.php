@@ -32,7 +32,7 @@
                 <?php } ?>
               </div>
               <div class="col-sm-6">
-                <button type="submit" class="btn btn-block btn-lg btn-primary">J'appuie</button>
+                <button type="submit" class="btn btn-block btn-lg btn-primary">Je rejoins</button>
               </div>
             </div>
             <div class="col-xs-12 text-center">
