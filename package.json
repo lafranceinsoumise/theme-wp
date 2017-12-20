@@ -1,22 +1,13 @@
 {
-  "name": "sage",
-  "version": "8.4.2",
-  "author": "Ben Word <ben@benword.com>",
-  "homepage": "https://roots.io/sage/",
-  "private": true,
+  "name": "@fi/theme",
+  "version": "1.0.0",
+  "author": "Guillaume Royer <perso@guilro.com>",
+  "homepage": "https://lafranceinsoumise.fr",
   "repository": {
     "type": "git",
-    "url": "git://github.com/roots/sage.git"
+    "url": "git@github.com:lafranceinsoumise/theme-wp.git"
   },
-  "bugs": {
-    "url": "https://github.com/roots/sage/issues"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://opensource.org/licenses/MIT"
-    }
-  ],
+  "license": "AGPL-3.0",
   "scripts": {
     "build": "bower install && gulp",
     "jshint": "gulp jshint",
