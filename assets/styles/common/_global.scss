@@ -1,1 +1,47 @@
+.padtop {
+	padding-top: $line-height-computed * .5;
+}
 
+.padbottom {
+	padding-bottom: $line-height-computed * .5;
+}
+
+.padtopless {
+	padding-top: $line-height-computed * .25;
+}
+
+.padbottomless {
+	padding-bottom: $line-height-computed * .25;
+}
+
+.padtopmore {
+	padding-top: $line-height-computed * .75;
+}
+
+.padbottommore {
+	padding-bottom: $line-height-computed * .75;
+}
+
+.margintopless {
+	margin-top: $line-height-computed * .5;
+}
+
+.margintop {
+	margin-top: $line-height-computed * .75;
+}
+
+.margintopmore {
+	margin-top: $line-height-computed;
+}
+
+.marginbottomless {
+	margin-bottom: $line-height-computed * .5;
+}
+
+.marginbottom {
+	margin-bottom: $line-height-computed * .75;
+}
+
+.marginbottommore {
+	margin-bottom: $line-height-computed;
+}
