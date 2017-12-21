@@ -1,6 +1,6 @@
 {
   "name": "@fi/theme",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Guillaume Royer <perso@guilro.com>",
   "homepage": "https://lafranceinsoumise.fr",
   "repository": {
@@ -11,7 +11,8 @@
   "scripts": {
     "build": "bower install && gulp",
     "jshint": "gulp jshint",
-    "jscs": "jscs gulpfile.js assets/scripts/*.js"
+    "jscs": "jscs gulpfile.js assets/scripts/*.js",
+    "postinstall": "bower install"
   },
   "engines": {
     "node": ">= 0.12.0",
