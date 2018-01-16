@@ -10,11 +10,7 @@
 }
 
 .page-template-template-no-sidebar .main {
-  @include make-sm-column(12);
-  @include make-md-column(10);
-  @include make-md-column-offset(1);
-  @include make-lg-column(8);
-  @include make-lg-column-offset(2);
+  @extend .col-responsive;
 }
 
 .page-template-template-banner div.wrap.container,

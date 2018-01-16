@@ -1,47 +1,55 @@
 .padtop {
-	padding-top: $line-height-computed * .5;
+  padding-top: $line-height-computed * .5;
 }
 
 .padbottom {
-	padding-bottom: $line-height-computed * .5;
+  padding-bottom: $line-height-computed * .5;
 }
 
 .padtopless {
-	padding-top: $line-height-computed * .25;
+  padding-top: $line-height-computed * .25;
 }
 
 .padbottomless {
-	padding-bottom: $line-height-computed * .25;
+  padding-bottom: $line-height-computed * .25;
 }
 
 .padtopmore {
-	padding-top: $line-height-computed * .75;
+  padding-top: $line-height-computed * .75;
 }
 
 .padbottommore {
-	padding-bottom: $line-height-computed * .75;
+  padding-bottom: $line-height-computed * .75;
 }
 
 .margintopless {
-	margin-top: $line-height-computed * .5;
+  margin-top: $line-height-computed * .5;
 }
 
 .margintop {
-	margin-top: $line-height-computed * .75;
+  margin-top: $line-height-computed * .75;
 }
 
 .margintopmore {
-	margin-top: $line-height-computed;
+  margin-top: $line-height-computed;
 }
 
 .marginbottomless {
-	margin-bottom: $line-height-computed * .5;
+  margin-bottom: $line-height-computed * .5;
 }
 
 .marginbottom {
-	margin-bottom: $line-height-computed * .75;
+  margin-bottom: $line-height-computed * .75;
 }
 
 .marginbottommore {
-	margin-bottom: $line-height-computed;
+  margin-bottom: $line-height-computed;
+}
+
+.col-responsive {
+  @include make-sm-column(12);
+  @include make-md-column(10);
+  @include make-md-column-offset(1);
+  @include make-lg-column(8);
+  @include make-lg-column-offset(2);
 }
