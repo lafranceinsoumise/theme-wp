@@ -76,11 +76,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-responsive">
-            <?php the_content(); ?>
-          </div>
-        </div>
+        <?php the_content(); ?>
       </div>
     </div>
   </div>
