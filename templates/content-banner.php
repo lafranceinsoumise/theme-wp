@@ -37,7 +37,7 @@
               }
             ?>
           </div>
-          <div class="col-xs-12 col-md-6 col-md-pull-3 card">
+          <div class="col-xs-12 col-md-6 col-md-pull-3"><div class="row"><div class="fi-registration-widget">
             <h3 class="text-center">Je rejoins la France Insoumise</h3>
             <div class="row">
               <form method="POST" action="">
@@ -74,7 +74,7 @@
                 </div>
               </form>
             </div>
-          </div>
+        </div></div></div>
         </div>
         <?php the_content(); ?>
       </div>

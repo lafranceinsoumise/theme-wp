@@ -87,12 +87,5 @@
 
   .container-signup-banner {
     margin-top: 50px;
-    .card {
-      @include blue-card();
-      h3 {
-        font-family: Courgette,cursive;
-        font-size: 40px;
-      }
-    }
   }
 }
