@@ -1,12 +1,10 @@
 .fi-registration-widget {
   @include blue-card();
   position: relative;
-  display: inline-block;
+  overflow: auto;
   width: 100%;
-  float: left;
   padding-left: 15px;
   padding-right: 15px;
-  clear: both;
   h3 {
     font-family: Courgette,cursive;
     font-size: 40px;
