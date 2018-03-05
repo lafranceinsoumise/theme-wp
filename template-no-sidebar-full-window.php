@@ -1,6 +1,7 @@
 <?php
 /**
  * Template Name: No Sidebar (Full window)
+ * Template Post Type: post, page
  */
 ?>
 

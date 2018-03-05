@@ -1,6 +1,7 @@
 <?php
 /**
  * Template Name: Nu pour page d'accueil
+ * Template Post Type: post, page
  */
 ?>
 

@@ -1,6 +1,7 @@
 <?php
 /**
  * Template Name: Banner (No content)
+ * Template Post Type: post, page
  */
 ?>
 
