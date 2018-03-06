@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: No Sidebar
+ * Template Name: Colonne de texte sans barre latérale
  * Template Post Type: post, page
  */
 ?>

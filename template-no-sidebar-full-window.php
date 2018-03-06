@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: No Sidebar (Full window)
+ * Template Name: Largeur de fenêtre sans barre latériale
  * Template Post Type: post, page
  */
 ?>
