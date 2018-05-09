@@ -67,7 +67,8 @@
                   </div>
                 </div>
                 <div class="col-xs-12">
-                  <p>Je recevrai des informations de la France Insoumise</p>
+                  <p>En remplissant ce formulaire, j'accepte que la France Insoumise utilise ces données
+                  pour m'envoyer des informations.</p>
                   <p class="text-right">
                     <small>Si vous habitez à l'étranger, <a href="http://www.jlm2017.fr/inscription">cliquez ici</a>.</small>
                   </p>

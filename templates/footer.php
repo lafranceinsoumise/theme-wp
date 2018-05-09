@@ -35,10 +35,13 @@
                 <button type="submit" class="btn btn-block btn-lg btn-primary">Je rejoins</button>
               </div>
             </div>
-            <div class="col-xs-12 text-center">
-              <p>Je recevrai des informations de la France Insoumise</p>
+            <div class="col-xs-12">
+              <p>
+                  En remplissant ce formulaire, j'accepte que la France Insoumise utilise ces données
+                  pour m'envoyer des informations.
+              </p>
               <p class="text-right">
-                <small>Si vous habitez à l'étranger, <a href="http://www.jlm2017.fr/inscription">cliquez ici</a>.</small>
+                <small>Si vous habitez à l'étranger, <a href="http://agir.lafranceinsoumise.fr/inscription">cliquez ici</a>.</small>
               </p>
             </div>
           </form>
