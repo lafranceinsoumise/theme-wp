@@ -9,16 +9,21 @@
   }
 }
 
+.post-template-template-no-sidebar .main,
 .page-template-template-no-sidebar .main {
   @extend .col-responsive;
 }
 
+.post-template-template-banner div.wrap.container,
 .page-template-template-banner div.wrap.container,
+.post-template-template-no-sidebar-full-window div.wrap.container,
 .page-template-template-no-sidebar-full-window div.wrap.container,
+.post-template-template-naked div.wrap.container,
 .page-template-template-naked div.wrap.container {
   width: 100%;
 }
 
+.post-template-template-naked.elementor-page nav.nav-primary,
 .page-template-template-naked.elementor-page nav.nav-primary {
   margin-bottom: 0;
 }
@@ -27,8 +32,11 @@
   padding: 0;
 }
 
+.post-template-template-no-sidebar,
 .page-template-template-no-sidebar,
+.post-template-template-no-sidebar-full-container,
 .page-template-template-no-sidebar-full-container,
+.post-template-template-no-sidebar-full-window,
 .page-template-template-no-sidebar-full-window {
   .page-header {
     text-align: center;
