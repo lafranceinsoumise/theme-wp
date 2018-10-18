@@ -21,6 +21,11 @@ use Roots\Sage\Wrapper;
       }
     ?>
     <div class="wrap container" role="document">
+      <?php
+      if ( function_exists('yoast_breadcrumb') ) {
+        yoast_breadcrumb( '<ol class="breadcrumb">','</ol>' );
+      }
+      ?>
       <div class="content row">
         <main class="main">
           <?php include Wrapper\template_path(); ?>

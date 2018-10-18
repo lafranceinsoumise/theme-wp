@@ -81,5 +81,5 @@ use Roots\Sage\Wrapper;
       </div>
     </div>
   </nav>
-<? endif; ?>
+<?php endif; ?>
 </header>
