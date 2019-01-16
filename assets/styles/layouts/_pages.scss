@@ -28,8 +28,8 @@
   margin-bottom: 0;
 }
 
-.elementor-page .main {
-  padding: 0;
+.elementor-page .entry-content {
+  @extend .row;
 }
 
 .post-template-template-no-sidebar,
