@@ -1,7 +1,23 @@
-.banner .nav li {
+.banner .navbar-nav li.menu-item {
   @extend .nav-item;
+
+  > a {
+    @extend .nav-link;
+  }
 }
 
-.banner .nav a {
-  @extend .nav-link;
+.banner .navbar-nav li.menu-item-has-children {
+  @extend .dropdown;
+
+  > a {
+    @extend .dropdown-toggle;
+  }
+
+  .sub-menu {
+    @extend .dropdown-menu;
+
+    > a {
+      @extend .dropdown-item;
+    }
+  }
 }
