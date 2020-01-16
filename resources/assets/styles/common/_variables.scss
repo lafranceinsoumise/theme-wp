@@ -1,10 +1,17 @@
 /** Import Bootstrap functions */
 @import "~bootstrap/scss/functions";
 
-$theme-colors: (
-  primary: #0098b6
-);
+$primary: #0098b6;
+$secondary: #c9462c;
 
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 $navbar-dark-toggler-icon-bg: none;
 $navbar-light-toggler-icon-bg: none;
+
+$font-family-sans-serif: "Montserrat", sans-serif;
+$font-family-serif: "Roboto Slab", serif;
+
+$font-family-base: $font-family-serif;
+
+$headings-font-family: $font-family-sans-serif;
+$headings-font-weight: 700;
