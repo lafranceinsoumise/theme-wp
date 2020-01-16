@@ -89,3 +89,17 @@ add_filter('comments_template', function ($comments_template) {
 
     return $comments_template;
 }, 100);
+
+
+add_filter('sage/display_sidebar', function ($display) {
+    // Do not display sidebar if
+    return !in_array(true, [
+        is_404(),
+        is_front_page(),
+        is_home(),
+        is_category(),
+        is_archive(),
+        is_search(),
+        function_exists('is_product') && is_product(),
+    ]);
+});

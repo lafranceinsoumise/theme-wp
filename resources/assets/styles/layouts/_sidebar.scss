@@ -1,0 +1,13 @@
+body.sidebar-primary {
+  .content {
+    @extend .row;
+
+    .main {
+      @extend .col-sm-8;
+    }
+
+    .sidebar {
+      @extend .col-sm-4;
+    }
+  }
+}
