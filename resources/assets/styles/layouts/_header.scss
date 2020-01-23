@@ -1,3 +1,28 @@
+.banner .navbar {
+  @extend .navbar-expand-lg;
+}
+
+.banner .navbar-primary {
+  @extend .navbar-light;
+
+  .navbar-brand {
+    @extend .mr-auto;
+  }
+}
+
+.banner .navbar-secondary {
+  @extend .navbar-dark;
+  @extend .bg-secondary;
+
+  .search-form .search-submit {
+    @extend .btn-outline-light;
+  }
+
+  .navbar-nav {
+    @extend .mr-auto;
+  }
+}
+
 .banner .navbar-nav li.menu-item {
   @extend .nav-item;
 
