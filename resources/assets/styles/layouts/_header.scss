@@ -23,6 +23,7 @@
   @extend .bg-secondary;
 
   .search-form .search-submit {
+    @extend .btn-secondary;
     @extend .btn-outline-light;
   }
 

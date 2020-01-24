@@ -103,3 +103,8 @@ add_filter('sage/display_sidebar', function ($display) {
         function_exists('is_product') && is_product(),
     ]);
 });
+
+
+add_filter('get_search_form', function () {
+    return template('partials.searchform');
+});
