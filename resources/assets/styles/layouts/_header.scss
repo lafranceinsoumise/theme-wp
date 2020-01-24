@@ -1,3 +1,11 @@
+.banner {
+  margin-bottom: 20px;
+
+  .breadcrumb {
+    @extend .text-muted;
+  }
+}
+
 .banner .navbar {
   @extend .navbar-expand-lg;
 }
@@ -21,6 +29,8 @@
   .navbar-nav {
     @extend .mr-auto;
   }
+
+  margin-bottom: 20px;
 }
 
 .banner .navbar-nav li.menu-item {
