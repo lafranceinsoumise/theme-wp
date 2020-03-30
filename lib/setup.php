@@ -128,6 +128,15 @@ function display_secondary_navbar() {
     return apply_filters('sage/display_secondary_navbar', $display);
 }
 
+function website_remove($fields)
+{
+  if(isset($fields['url']))
+    unset($fields['url']);
+  return $fields;
+}
+add_filter('comment_form_default_fields', __NAMESPACE__ . '\\website_remove');
+
+
 /**
  * Theme assets
  */
