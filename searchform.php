@@ -1,4 +1,4 @@
-<form role="search" method="get" class="search-form">
+<form role="search" method="get" class="search-form" action="<?= esc_url(home_url("/")) ?>">
   <div class="input-group">
     <label>
       <span class="screen-reader-text">Rechercher&nbsp;:</span>
