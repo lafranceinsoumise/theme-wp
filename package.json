@@ -48,6 +48,6 @@
     "wiredep": "^2.2.2"
   },
   "dependencies": {
-    "bower": "^1.8.4"
+    "bower": "^1.8.8"
   }
 }
